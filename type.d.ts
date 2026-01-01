@@ -7,14 +7,8 @@ interface NextPageProps {
 
 interface CandlestickChartProps {
   data?: OHLCData[];
-  liveOhlcv?: OHLCData | null;
-  coinId: string;
   height?: number;
   children?: React.ReactNode;
-  mode?: 'historical' | 'live';
-  initialPeriod?: Period;
-  liveInterval: '1s' | '1m';
-  setLiveInterval: (interval: '1s' | '1m') => void;
 }
 
 interface ConverterProps {
